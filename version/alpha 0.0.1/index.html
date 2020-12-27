@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JS DUNGEON</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="full-screen" content="yes">
+	<meta charset="urf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="gameOver">
+	<p1>YOU DIED</p1><br>
+	<br><br>
+	<button onclick="gameRetry()">RETRY</button>
+	<button id="returnMenu">MENU</button>
+</div>
+	<div id="menu">
+		<p1>ROBERT ADVENTURE</p1><br>
+		<button onclick="new_game()">PLAY</button><br>
+		<button>HELP</button><br>
+		<button>ABOUT</button><br>
+	</div>
+	<div id="gameHtml">
+		<canvas id="game" width="438" height="480"></canvas><br>
+		<b id="statsHP" style="color:red;"></b><b id="statsATK" style="color:blue;"></b><b id="statsWEAPON" style="color:purple;"></b><b id="statsFLOOR" style="color:gray;"></b><br>
+    	<button id="up" style="position:relative; left:90px;">W</button><br>
+		<div style="position:relative; left:60px;">
+		<button id="left">A</button>  <button id="ok">E</button>  <button id="right">D</button><br>
+		</div>
+    	<button id="down"style="position:relative; left:90px;">S</button><br>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

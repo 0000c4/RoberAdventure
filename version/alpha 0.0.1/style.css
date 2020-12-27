@@ -1,0 +1,72 @@
+#gameOver{
+text-align:center;
+border:7px solid #414040;
+background-color:#646464;
+font: 45px pixel;
+left:5%;
+top:10%;
+height:300px;
+width:300px;
+position:absolute;
+}
+#gameOver button{
+font: 40px pixel;
+	background-color:#646464;
+	border:4px solid #414040;
+	padding: 0 30px;
+
+}
+#gameOver button:active{
+	font: 40px pixel;
+	background-color:#414040;
+	border:4px solid #646464;
+}
+@font-face {
+    font-family: pixel; /* Гарнитура шрифта */
+    src: url(font.ttf); /* Путь к файлу со шрифтом */
+}
+#gameHtml button{
+	background-color:#646464;
+	border:4px solid #414040;
+	padding: 0 30px;
+	font-size: 40px;
+	line-height: 40px;
+	width: 97px;
+
+	}
+#gameHtml button:active{
+	background-color:#414040;
+	border:4px solid #646464;
+	padding: 0 30px;
+	font-size: 40px;
+	line-height: 40px;
+	width: 97px;
+
+	}
+#menu{
+font: 100px pixel;
+position: absolute;
+background-color:#646464;
+text-align:center;
+  height:100%;
+  width: 100%;
+  }
+#menu button{
+	font: 80px pixel;
+	background-color:#646464;
+	border:4px solid #414040;
+	padding: 0 100px;
+}
+#menu button:active{
+	font: 80px pixel;
+	background-color:#414040;
+	border:4px solid #646464;
+	padding: 0 100px;
+}
+
+ body{
+ font: pixel;
+   height: 100%;
+  margin: 0;
+  background-color:black;
+  }
