@@ -296,6 +296,27 @@ function returnMenu(){//возвращение в меню
 function gameRetry(){//попробовать заново
     document.getElementById("gameHtml").style.display = 'block';//актививация игры
     document.getElementById("gameOver").style.display = 'none';//закрытие меню
+    		//перерисовка спрайтов
+	enemy1IMG.src = "slime.png";
+	enemy1IMG2.src = "slime2.png";
+	enemy2IMG.src = "slime.png";
+	enemy2IMG2.src = "slime2.png";
+	enemy3IMG.src = "slime.png";
+	enemy3IMG2.src = "slime2.png";
+	enemy4IMG.src = "slime.png";
+	enemy4IMG2.src = "slime2.png";
+	enemy5IMG.src = "slime.png";
+	enemy5IMG2.src = "slime2.png";
+	enemy6IMG.src = "slime.png";
+	enemy6IMG2.src = "slime2.png";
+	enemy7IMG.src = "slime.png";
+	enemy7IMG2.src = "slime2.png";
+	enemy8IMG.src = "slime.png";
+	enemy8IMG2.src = "slime2.png";
+	enemy9IMG.src = "slime.png";
+	enemy9IMG2.src = "slime2.png";
+	enemy10IMG.src = "slime.png";
+	enemy10IMG2.src = "slime2.png";
     //выход из цикла
     clearInterval(loop);
     //удаление врагов
