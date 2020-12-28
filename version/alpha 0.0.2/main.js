@@ -210,11 +210,13 @@ class enemy{//для врагов выбран класс вместо стру�
 			
 			}
 			//battle
+			if(this.hp <= 0){this.active = 0;this.life = 0; field[this.y][this.x] = "□"; monsterKill++;}//dead
+			
 			if(field[this.y][this.x - 1] == playerChar || field[this.y][this.x + 1] == playerChar ||
 			field[this.y - 1][this.x] == playerChar || field[this.y + 1][this.x] == playerChar){
 				if(player.step == 0){player.hp = player.hp - this.atk; player.step = 1;}//ход врага
 			}
-			if(this.hp <= 0){this.active = 0;this.life = 0; field[this.y][this.x] = "□"; monsterKill++;}//dead
+			
 		}
 	}
 }
@@ -340,6 +342,27 @@ function new_game(){//запуск игры
 	document.getElementById("menu").style.display = 'none';//выход из меню
 	document.getElementById("gameHtml").style.display = 'block';//запуск игры
 	document.getElementById("gameOver").style.display = 'none';//вывод меню о проигрыше
+		//перерисовка спрайтов
+	enemy1IMG.src = "slime.png";
+	enemy1IMG2.src = "slime2.png";
+	enemy2IMG.src = "slime.png";
+	enemy2IMG2.src = "slime2.png";
+	enemy3IMG.src = "slime.png";
+	enemy3IMG2.src = "slime2.png";
+	enemy4IMG.src = "slime.png";
+	enemy4IMG2.src = "slime2.png";
+	enemy5IMG.src = "slime.png";
+	enemy5IMG2.src = "slime2.png";
+	enemy6IMG.src = "slime.png";
+	enemy6IMG2.src = "slime2.png";
+	enemy7IMG.src = "slime.png";
+	enemy7IMG2.src = "slime2.png";
+	enemy8IMG.src = "slime.png";
+	enemy8IMG2.src = "slime2.png";
+	enemy9IMG.src = "slime.png";
+	enemy9IMG2.src = "slime2.png";
+	enemy10IMG.src = "slime.png";
+	enemy10IMG2.src = "slime2.png";
 	    //выход из цикла
     clearInterval(loop);
     //удаление врагов
