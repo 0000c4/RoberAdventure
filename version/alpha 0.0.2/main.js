@@ -1408,13 +1408,8 @@ function items(mode){
 	var roomChest  = random(0,6);
 	var roomHealth = random(0,6);
 	var roomDown = random(0,5);
-	console.log(roomDown)
-	console.log(roomChest)
-	console.log(roomHealth)
 	if(mode == "chest"){//chest
-		if(roomDown == roomChest){
-			while(roomDown == roomChest){roomDown = random(0,5);console.log(roomDown)}//если комната сундука и спуска совпадает выбрать другую
-		}
+			while(roomDown + 1 == roomChest){console.log("work");roomDown = random(0,5);}//если комната сундука и спуска совпадает выбрать другую
 		if(roomChest == 0){chestY = 3;chestX = 4;field[chestY][chestX] = chestChar;}
 		else if(roomChest == 1){chestY = 3;chestX = 14;}
 		else if(roomChest == 2){chestY = 10;chestX = 4;}
@@ -1424,9 +1419,7 @@ function items(mode){
 		chestActive = 1;
 	}
 	if(mode == "health"){//health
-		if(roomDown == roomChest){
-			while(roomDown == roomHealth){roomDown = random(0,5);}
-		}
+			while(roomDown + 1 == roomHealth){roomDown = random(0,5);}
 		if(roomHealth == 0){healthY = 3;healthX = 4;field[healthY][healthX] = healthChar;}
 		else if(roomHealth == 1){healthY = 3;healthX = 14;}
 		else if(roomHealth == 2){heatlhY = 10;healthX = 4;}
@@ -1666,5 +1659,4 @@ function lvl3(){
 
 	loop = setInterval(cycle,100);
 }
-lvl1();
 
